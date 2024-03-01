@@ -23,3 +23,6 @@ class TeslaHomePage():
     def click_on_vehicles(self):
         vehicles = self.browser.find_element(*self.VEHICLES)
         vehicles.click()
+
+    def verify_page_title(self):
+        assert self.browser.title == self.TITLE
